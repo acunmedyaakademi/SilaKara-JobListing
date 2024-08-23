@@ -1,0 +1,182 @@
+body {
+  background-color: #EFFAFA;
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  color: #2B3939;
+}
+
+.header {
+  background: url('/src/img/HeaderShapes.svg') #63BABA center center repeat-x;
+  height: 156px;
+}
+
+.jobItems {
+  max-width: 1100px;
+  margin-inline: auto;
+  padding-block: 76px;
+  display: grid;
+  gap: 24px;
+}
+
+.jobItem {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 30px 40px;
+  border-radius: 5px;
+
+  & > * {
+    width: calc(50% - 20px);
+  }
+
+  a {
+    color: #5CA5A5;
+  }
+
+  h3 {
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 7px;
+  }
+
+  h4 {
+    font-size: 18px;
+    line-height: normal;
+    margin-bottom: 12px;
+    span {
+      margin-left: 5px;
+    }
+  }
+}
+
+.jobDetails a:has(img) {
+  float: left;
+  margin-right: 24px;
+}
+
+.jobTags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: center;
+  gap: 16px;
+  a {
+    background-color: #5ca5a515;
+    border-radius: 4px;
+    font-weight: bold;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.new, .featured {
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #5CA5A5;
+  font-size: 14px;
+  line-height: 14px;
+  border-radius: 12px;
+  padding: 8px 8px 4px;
+}
+
+.featured {
+  background-color: #2B3939;
+}
+
+.featuredJob {
+  border-left: 5px solid #5CA5A5;
+  padding-left: 35px;
+}
+
+.filterPanel {
+  margin: 0 auto;
+  max-width: 1110px;
+  padding: 20px;
+  background-color: #ffff;
+  display: flex;
+  position: relative;
+  bottom: 61px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.filterTags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filterButton {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #EFFAFA;
+  color: #5CA5A5;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.1230769231915474px;
+  text-align: left;
+}
+
+.activeFilters {
+  margin: 0 auto;
+  max-width: 1110px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+  background-color: #ffff;
+  position: relative;
+  bottom: 61px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.filterTag {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  color: #5CA5A5;
+  background-color: #EFFAFA;
+  border-radius: 5px;
+  padding: 0px 0px 0px 10px;}
+
+.filterTag span {
+  margin-right: 10px;
+}
+
+.removeButton {
+  background: none;
+  border: none;
+  color: #ffff;
+  background-color: #5CA5A5;
+  padding: 6px 9px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.removeButton:hover {
+  background-color: #2B3939;
+}
+
+.clearAllButton {
+  padding-left: 10px;
+  color: #5CA5A5;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  background: unset;
+  border: unset;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.1230769231915474px;
+}
+
+.clearAllButton:hover {
+  text-decoration-line: underline;
+}
